@@ -7,3 +7,10 @@
     color:green;
     font-size: 30px;
 }
+
+  body {
+    background-image: url("https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/267788660_437239724671417_2843738645397449948_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0debeb&_nc_ohc=WAmiSsKCE5oAX-g1EwK&_nc_ht=scontent.fsgn2-5.fna&oh=00_AfA8TCV2RBMXLHwK0NX05IsCJS2lf7UOh99xt61l1UxtrA&oe=646D1547");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }

@@ -6,19 +6,62 @@
     3. img - image ( hình ảnh thường đi kèm với lệnh <img src"..." alt="...">)
     4. a - anchor ( đưa đến liên kết, <a href="..."> <!a> )
     5. ul, li - unordered list, list item ( tạo danh sách <ul> <li>...<!li> <!ul>)
-    6. table
-    7. input 
-    8. button
-    9. div
+    6. table (lập bảng)
+    7. input (tạo ô vuông để tick chọn)
+    8. button (tạo nút nhấn)
+    9. div (tạo khối bao quanh các phần tử)
 -->    
 <!-- Phần đầu --> 
     <head>
+      <link rel="https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/315195664_655025816226139_4796357046340642744_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=0debeb&_nc_ohc=CasSH2xBNuYAX85UDS7&_nc_ht=scontent.fsgn2-5.fna&oh=00_AfAI3eBTfpvJz_SoezGIInnoX9Igj53aSNm8haEvhM7l5A&oe=646E2753" href="style.css">
+
+<body>
+  <h1> INTRODUCE </h1>
+ 
+  <a href="trang2.html" style="color:crimson"> Next page 2 </a>
+       <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #a6a2a2;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #333333;
+      text-align: center;
+    }
+    
+    p {
+      color: #666666;
+      line-height: 1.5;
+    }
+    
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+      
         <title>Website của SƠN</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="main.css">
     <style>
     h1 {
-      color:gold;
+      color:rgb(2, 2, 1);
     } 
     </style>
         <!-- <style> 
@@ -31,22 +74,27 @@
 
     <!-- Phần thân -->
     <body>
-      <div> 
-       <h1 style="color:crimson;font-size: 40px" CSS in HTML?> </h1>
-        <h1 id="first-heading">  Hi! I'm Son, Welcom to my website!</h1>
+      
+  
+      <div class="container">
+
+        
+        <h1 style="color:crimson;font-size: 40px" CSS in HTML?> </h1>
+        <h1 id="first-heading"> <i> <mark> Hi! I'm Son, Welcom to my website! </mark> </i> </h1>
+        <h1 style="border: 2px solid dodgerblue;" Hi! I'm Son, Welcom to my website!> </h1>
        <!-- <h1 class="second-heading">hi </h1>
         <h1 class="second-heading">hello</h1>
         <h1 class="second-heading">wow</h1> -->
                 
-       <h2>My Personal Information:</h2>
-        <p> I am a student majoring in mechatronic engineering technology at University of Technical Education - University of Danang.</p>
+       <h2><em>My Personal Information:</em></h2>
+        <p> I'm a student majoring in mechatronic engineering technology at University of Technical Education - University of Danang.</p>
         <h3> Information: </h3> 
         <ul>
           <li>Name: Nguyễn Hữu Nam Sơn</li>
           <li>Class: 22CDT2</li>
           <li> Date of birth: 24/11/2004</li>
           <li>Majors: Mechatronics engineering technology</li>
-          <li>Phone number: 0798149818</li>
+          <li>Phone number:<a href="tel:+84798149818"> 0798149818 </a></li>
         </ul>
         <a href="https://www.facebook.com/huunamteo.nguyen">(visit my personal page) </a>
         <h3> Contacts: </h3>
@@ -58,12 +106,6 @@
 Address: 48 Cao Thang, <a href="https://www.google.com/search?q=%C4%91%E1%BA%A1i+h%E1%BB%8Dc+s%C6%B0+ph%E1%BA%A1m+k%E1%BB%B9+thu%E1%BA%ADt+%C4%91%C3%A0+n%E1%BA%B5ng&sxsrf=APwXEdekjYxU5-DB0hecYwbeTc9TYB7eQA%3A1683627874101&ei=Yh9aZITeBavs2roPj9Gp0A8&gs_ssp=eJzj4tZP1zc0MjYyS0k3MGC0UjWoMDY0MTK0MDG3NDI0MTA3NbUyqEgxMTC1SE4yMrU0tzBPSUz2Mjgy8eGuhZkKGQ939yYrFB_boFCQARTIVch-uHunQklG6cNda0sUjkw8vEAh7-GurXnpAFSgJ18&oq=&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgCMgcIIxDqAhAnMgcIIxDqAhAnMg0ILhDHARCvARDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnSgQIQRgAUABYAGCoDGgBcAB4AIABAIgBAJIBAJgBAKABAbABCsABAQ&sclient=gws-wiz-serp" target ="_blank">Da Nang city </a>
         <br> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.780481022684!2d108.21105391089193!3d16.07687723916854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421847f0d1243f%3A0xfe9e3527761db501!2zNDggQ2FvIFRo4bqvbmcsIFRoYW5oIELDrG5oLCBI4bqjaSBDaMOidSwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2sus!4v1683637211159!5m2!1svi!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        
-        
-     
-    
-  
-      
-    
       </tbody>
     </table>
     
