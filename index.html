@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Personal Introduction</title>
+  <title>SON</title>
   
   <style>
     body {
@@ -15,10 +15,10 @@
     .container {
       max-width: 800px;
       background-color: #333;
-      margin: 20px auto;
-      padding: 20px;
+      margin: 100px auto;
+      padding: 80px;
       border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 100px rgba(205, 6, 6, 0.849);
     }
 
     h1 {
@@ -40,7 +40,8 @@
     }
 
     .contact-info {
-      margin-top: 20px;
+      margin-top: 40px;
+      text-align: center;
     }
 
     .contact-info h3 {
@@ -50,6 +51,9 @@
     ul {
       list-style: none;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 60px; /* Khoảng cách giữa các biểu tượng */
     }
 
     ul li {
@@ -59,76 +63,47 @@
     ul li a {
       color: #ff5733;
       text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    #earth {
-      width: 160px;
-      height: 160px;
-      background-image: url('https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/308147085_617587246636663_9112315953689360820_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=5614bc&_nc_ohc=9Gq63NMmyFoAX95Mhrb&_nc_ht=scontent.fhan2-3.fna&_nc_e2o=s&oh=00_AfCzLC6r2LKKxcgNIY_j6cyNwW9xI6h51efcTXtRpOcTQA&oe=652DD702');
-      background-size: cover;
-      border-radius: 80%;
-      animation: rotate 10s linear infinite;
-      margin: 20px auto;
+    ul li a i {
+      margin-bottom: 10px;
     }
 
-    @keyframes rotate {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    #clock {
-      text-align: center;
-      font-size: 24px;
-      margin-top: 20px;
-    }
-
-    #clock::before {
-      content: "\1F551"; /* Unicode clock icon */
-      font-size: 36px;
-      margin-right: 10px;
-    }
   </style>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
  
-    <div class="container">
-    <h1>Nguyễn Hữu Nam Sơn</h1>
-    <div id="earth"></div>
-    <p>I'm a student majoring in mechatronic engineering technology at University of Technical Education - University of Danang. I am passionate about technology and enjoy spending time listening to music, singing, watching movies, reading novels, and exploring new technologies. Personally, I am a sociable person and always want to make friends and learn from people who are better than me to develop new knowledge and skills together.</p>
+<div class="container">
+  <img src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/315195664_655025816226139_4796357046340642744_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=OdfmJ4Vt-bQAX-vHexY&_nc_ht=scontent.fsgn2-5.fna&_nc_e2o=s&oh=00_AfCqyK25lQ4JLBMvGuqCYEqMp5IsxmVQ_KEiOTLCaoAFtw&oe=652FF3D3" alt="Avatar" style="display: block; margin: 0 auto; width: 150px; border-radius: 10%;">
+  <h1>Nguyễn Hữu Nam Sơn</h1>
+  <div id="earth"></div>
+  <p>I'm a student majoring in mechatronic engineering technology at University of Technical Education - University of Danang. I am passionate about technology and enjoy spending time listening to music, singing, watching movies, reading novels, and exploring new technologies. Personally, I am a sociable person and always want to make friends and learn from people who are better than me to develop new knowledge and skills together.</p>
 
-    <div class="contact-info">
-      <h3>CONTACT :</h3>
-      <ul>
-        <li><strong>Name:</strong> Nguyễn Hữu Nam Sơn</li>
-        <li><strong>Date of Birth:</strong> 24/11/2004</li>
-        <li><strong>Email 1:</strong> <a href="mailto:nguyenhuunamteo@gmail.com">nguyenhuunamteo@gmail.com</a></li>
-        <li><strong>Email 2:</strong> <a href="mailto:huunamsonnguyen@gmail.com">huunamsonnguyen@gmail.com</a></li>
-        <li><strong>Phone Number:</strong> <a href="tel:+84798149818">0798149818</a></li>
-        <li><a href="https://www.facebook.com/huunamteo.nguyen" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
-        <li><a href="https://www.instagram.com/n_h_n_son/?fbclid=IwAR20fhmj16eUBn4afm4igR8FsVHbKn4hZ-ac5orbOdvcLPKqRzqKgIIVwMc" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-      </ul>
-      <br>
-      <strong>Address:</strong> 48 Cao Thang, <a href="https://www.google.com/search?q=%C4%91%E1%BA%A1i+h%E1%BB%8Dc+s%C6%B0+ph%E1%BA%A1m+k%E1%BB%B9+thu%E1%BA%ADt+%C4%90%C3%A0+n%E1%BA%B5ng&sxsrf=APwXEdekjYxU5-DB0hecYwbeTc9TYB7eQA%3A1683627874101&ei=Yh9aZITeBavs2roPj9Gp0A8&gs_ssp=eJzj4tZP1zc0MjYyS0k3MGC0UjWoMDY0MTK0MDG3NDI0MTA3NbUyqEgxMTC1SE4yMrU0tzBPSUz2Mjgy8eGuhZkKGQ939yYrFB_boFCQARTIVch-uHunQklG6cNda0sUjkw8vEAh7-GurXnpAFSgJ18&oq=&gs_ssp=Cgxnd3Mtd2l6LXNlcnAQARgCMgcIIxDqAhAnMgcIIxDqAhAnMg0ILhDHARCvARDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnSgQIQRgAUABYAGCoDGgBcAB4AIABAIgBAJIBAJgBAKABAbABCsABAQ&sclient=gws-wiz-serp" target="_blank">Danang University of Technical Education</a>
-    </div>
-    
-   <br> <button><a href="index.html" style="color: crimson; padding-right: 90px;"><strong> NEXT  1 </strong></a></button> 
-          <button> <a href="trang2.html" style="color: crimson; padding-right: 90px;"><strong> 2 </strong></a></button> 
-            <button>  <a href="luutrutailieu.html" style="color: crimson; padding-right: 90px;"><strong> 3 </strong></a></button> 
-
-    <div id="clock"></div>
-
+  <div class="contact-info">
+  <div>  
+   <ul>
+    <li> <strong>Email 1:</strong> <a href="mailto:nguyenhuunamteo@gmail.com">nguyenhuunamteo@gmail.com</a></li>
+    <li><strong>Email 2:</strong> <a href="mailto:huunamsonnguyen@gmail.com">huunamsonnguyen@gmail.com</a></li>
+   </ul>
+    <h3>CONTACT :</h3>
+    <ul>
+      <li><a href="tel:+84798149818"><i class="fas fa-phone fa-2x" style="transform: rotateY(180deg);"></i></a></li>
+      <li><a href="https://www.facebook.com/huunamteo.nguyen" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+      <li><a href="https://www.instagram.com/n_h_n_son/?fbclid=IwAR20fhmj16eUBn4afm4igR8FsVHbKn4hZ-ac5orbOdvcLPKqRzqKgIIVwMc" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+      <li><a href="https://www.tiktok.com/@n.son2__4" target="_blank"><i class="fab fa-tiktok fa-2x"></i></a></li>
+    </ul>
+    <br>
+    <strong>Address:</strong> 48 Cao Thang, <a href="https://www.google.com/search?q=%C4%91%E1%BA%A1i+h%E1%BB%8Dc+s%C6%B0+ph%E1%BA%A1m+k%E1%BB%B9+thu%E1%BA%ADt+%C4%90%C3%A0+n%E1%BA%B5ng&sxsrf=APwXEdekjYxU5-DB0hecYwbeTc9TYB7eQA%3A1683627874101&ei=Yh9aZITeBavs2roPj9Gp0A8&gs_ssp=eJzj4tZP1zc0MjYyS0k3MGC0UjWoMDY0MTK0MDG3NDI0MTA3NbUyqEgxMTC1SE4yMrU0tzBPSUz2Mjgy8eGuhZkKGQ939yYrFB_boFCQARTIVch-uHunQklG6cNda0sUjkw8vEAh7-GurXnpAFSgJ18&oq=&gs_ssp=Cgxnd3Mtd2l6LXNlcnAQARgCMgcIIxDqAhAnMgcIIxDqAhAnMg0ILhDHARCvARDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnSgQIQRgAUABYAGCoDGgBcAB4AIABAIgBAJIBAJgBAKABAbABCsABAQ&sclient=gws-wiz-serp" target="_blank">Danang University of Technical Education</a>
   </div>
-  <script>
-    function updateClock() {
-      var now = new Date();
-      var clock = document.getElementById('clock');
-      clock.innerHTML = now.toLocaleTimeString();
-    }
-    setInterval(updateClock, 1000);
-    updateClock();
-  </script>
+  <br> <button><a href="index.html" style="color: crimson; padding-right: 60px;"><strong> NEXT  1 </strong></a></button> 
+  <button> <a href="trang2.html" style="color: crimson; padding-right: 90px;"><strong> 2 </strong></a></button> 
+    <button>  <a href="luutrutailieu.html" style="color: crimson; padding-right: 90px;"><strong> 3 </strong></a></button> 
 
+</div>
 </body>
 </html>
