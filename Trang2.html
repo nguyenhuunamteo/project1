@@ -3,69 +3,6 @@
 <head>
     <title>PAGE 2</title>
     <style>
-       
-       body {
-          font-family: Arial, sans-serif;
-          background-color: #282c35;
-          margin: 0;
-          padding: 0;
-          color: #ffffff;
-        }
-    
-        .container {
-          max-width: 800px;
-          background-color: #333;
-          margin: 20px auto;
-          padding: 20px;
-          border-radius: 5px;
-          box-shadow: 0 0 10px rgba(230, 6, 6, 0.882);
-        }
-    
-        h1 {
-          color: #ff5733;
-          text-align: center;
-        }
-    
-        p {
-          line-height: 1.5;
-        }
-    
-        a {
-          color: #ff5733;
-          text-decoration: none;
-        }
-    
-        a:hover {
-          text-decoration: underline;
-        }
-    
-        .contact-info {
-          margin-top: 20px;
-        }
-    
-        .contact-info h3 {
-          color: #ff5733;
-        }
-    
-        ul {
-          list-style: none;
-          padding: 0;
-        }
-    
-        ul li {
-          margin-bottom: 10px;
-        }
-    
-        ul li a {
-          color: #ff5733;
-          text-decoration: none;
-        }
-        
-      </style>
-    
-      
-        
-    <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #282c35;
@@ -77,10 +14,10 @@
         .container {
             max-width: 800px;
             background-color: #333;
-            margin: 100px auto;
-            padding: 60px;
+            margin: 20px auto;
+            padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 100px rgba(202, 6, 6, 0.799);
+            box-shadow: 0 0 10px rgba(230, 6, 6, 0.882);
         }
 
         h1 {
@@ -122,17 +59,64 @@
             color: #ff5733;
             text-decoration: none;
         }
+
+        .skills {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .skill-chart {
+            width: 600px; /* Tăng bề ngang của biểu đồ */
+            margin: 0 auto;
+        }
     </style>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1> SOFTSKILLS </h1>
-        <p> Updating... </p>
-    
-    <br> <button><a href="index.html" style="color: crimson; padding-right: 90px;"><strong>1</strong></a></button>
-           <button> <a href="trang2.html" style="color: crimson; padding-right: 90px;"><strong>2</strong></a></button>
-             <button> <a href="luutrutailieu.html" style="color: crimson; padding-right: 90px;"><strong>3</strong></a></button>
+        <h1>SOFTSKILLS</h1>
+        <p>Updating...</p>
 
+        <div class="skills">
+            <canvas class="skill-chart" id="skillChart"></canvas>
+        </div>
+    
+        <br>
+        <button><a href="index.html" style="color: crimson; padding-right: 90px;"><strong>1</strong></a></button>
+        <button><a href="trang2.html" style="color: crimson; padding-right: 90px;"><strong>2</strong></a></button>
+        <button><a href="luutrutailieu.html" style="color: crimson; padding-right: 90px;"><strong>3</strong></a></button>
     </div>
+    
+    <script>
+        var skillData = {
+            labels: ['Communication', 'Teamwork', 'Programming', 'AutoCAD', 'English'],
+            datasets: [
+                {
+                    data: [90, 80, 40, 50, 75],
+                    backgroundColor: ['#ff5733', '#ffb733', '#33ff57', '#3393ff', '#800080'],
+                },
+            ],
+        };
+
+        var skillOptions = {
+            responsive: true,
+            legend: {
+                display: false,
+            },
+            title: {
+                display: true,
+                text: 'My Skills',
+                fontSize: 18,
+            },
+        };
+
+        var ctx = document.getElementById('skillChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: skillData,
+            options: skillOptions,
+        });
+    </script>
 </body>
 </html>
